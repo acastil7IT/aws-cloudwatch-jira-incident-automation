@@ -1,8 +1,10 @@
-## Screenshots
+# Screenshots
 
-This folder contains screenshots for the AWS CloudWatch and Jira Incident Automation project.
+This folder contains screenshots that show the AWS CloudWatch to Jira automation in action.
 
-The screenshots show:
-- The AWS Lambda function
-- CloudWatch alarm configuration and trigger
-- Automatically created Jira incidents
+The images document:
+- Lambda function configuration
+- CloudWatch alarm triggering
+- Lambda test execution
+- Jira board with created incidents
+- Jira incident details
