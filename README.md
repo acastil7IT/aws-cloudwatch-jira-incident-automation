@@ -1,18 +1,18 @@
 # AWS CloudWatch and Jira Incident Automation
 
 ## Overview
-This project demonstrates a basic cloud incident automation workflow using AWS and Jira. The purpose of the project is to show how monitoring tools can automatically create incident tickets when an issue occurs, instead of relying on manual reporting.
+This project demonstrates a basic cloud incident automation workflow using AWS and Jira. The goal is to show how monitoring tools can automatically create incident tickets when issues occur, instead of relying on manual reporting.
 
 When an AWS Lambda function encounters errors, Amazon CloudWatch detects the issue and triggers an alarm. That alarm invokes a Lambda function which creates an incident in Jira. The incident then appears on a Jira board where it can be reviewed, tracked, and resolved.
 
 ---
 
 ## Tools Used
-- AWS Lambda
-- Amazon CloudWatch
-- Jira (Free version)
-- Python
-- Jira REST API
+- AWS Lambda  
+- Amazon CloudWatch  
+- Jira (Free version)  
+- Python  
+- Jira REST API  
 
 ---
 
@@ -27,15 +27,15 @@ When an AWS Lambda function encounters errors, Amazon CloudWatch detects the iss
 ---
 
 ## Jira Configuration
-- Project name: **Cloud Operations**
-- Board type: **Kanban**
+- Project name: Cloud Operations  
+- Board type: Kanban  
 
 Workflow states:
 - To Do  
 - In Progress  
 - Done  
 
-Each incident includes a summary, priority, labels, and a description indicating that the ticket was created automatically from an AWS alert.
+Each incident includes a summary, labels, and a description showing that the ticket was created automatically from an AWS alert.
 
 ---
 
@@ -54,9 +54,9 @@ After testing was completed, the alarm was disabled to prevent additional incide
 ---
 
 ## Project Structure
-- `lambda_function.py` contains the Python code used by AWS Lambda
-- Screenshots related to AWS and Jira are stored in a separate `screenshots` folder
-- This README provides an overview of the setup and workflow
+- `lambda_function.py` contains the Python code used by AWS Lambda  
+- Screenshots related to AWS and Jira are stored in the `screenshots/` folder  
+- This README provides an overview of the setup and workflow  
 
 ---
 
