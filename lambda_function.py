@@ -1,4 +1,3 @@
-
 import json
 import os
 import base64
@@ -75,5 +74,6 @@ def lambda_handler(event, context):
        return {"statusCode": e.code, "body": e.read().decode("utf-8")}
    except Exception as e:
        return {"statusCode": 500, "body": str(e)}
+
 
 
